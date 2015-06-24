@@ -962,7 +962,7 @@ module HelpScout
     end
 
     def run_workflow(workflow_id, conversation_id)
-      url = "workflows/#{workflow_id}/conversations/#{conversation_id}.json"
+      url = "/workflows/#{workflow_id}/conversations/#{conversation_id}.json"
 
       begin
         Client.run_request(@auth, url, nil)
